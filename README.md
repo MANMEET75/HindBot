@@ -3,11 +3,11 @@
 
 ## Chatbot Overview
 
-This chatbot is built using Google Gemini 1.5 Pro and features an end-to-end implementation of Retrieval-Augmented Generation (RAG) technology. The chatbot is designed to handle unstructured data in PDF format, which is collected through web scraping using Beautiful Soup from the official company website.
+This chatbot, named HindBot, utilizes Google Palm for its framework and incorporates advanced Retrieval-Augmented Generation (RAG) technology for seamless interactions. It's tailored to process unstructured data from PDFs, sourced through web scraping via Beautiful Soup, primarily from official Indian governmental websites.
 
 ## Technical Stack
 - **Modular Directory Structure:** Organized codebase for easy maintenance and scalability
-- **Nomic Embeddings:** Convert words to numerical representations for efficient processing
+- **Google Palm Embeddings:** Convert words to numerical representations for efficient processing
 - **Qdrant Vector Database:** Store and manage embeddings for fast querying and retrieval
 - **Docker:** Containerize the application for easy deployment and management
 - **FastAPI:** Create a robust and interactive web interface with a RESTful API
@@ -34,6 +34,37 @@ This chatbot is built using Google Gemini 1.5 Pro and features an end-to-end imp
 - Automated CI/CD pipelines using GitHub Actions
 - Scalable and secure deployment on AWS Cloud infrastructure
 
+## SInstructions for Execution
+### 1. Cloning the Repository
+```bash
 
+git clone https://github.com/MANMEET75/HindBot.git
+```
+### 2. Creating the virtual environment using anaconda
+```bash
+conda create -p venv python=3.11 -y
+```
+
+### 3. Activate the virtual environment
+```bash
+conda activate venv/
+```
+
+### 4. Install the Requirements
+```bash
+pip install -r requirements.txt
+```
+### 5. Run the following docker command in your command prompt
+```bash
+docker-compose up
+```
+### 6. Generate the Embeddings
+```bash
+python ingest.py
+```
+### 7. Run the FastAPI application
+```bash
+uvicorn app:app --reload --port 8080
+```
 
 Enjoy Coding!
