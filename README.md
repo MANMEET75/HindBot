@@ -1,5 +1,4 @@
 # HindBot
-# 07Bot
 <img src="static/UI.jpeg">
 
 ## Chatbot Overview
