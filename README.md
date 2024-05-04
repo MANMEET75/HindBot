@@ -1,5 +1,5 @@
 # HindBot
-<img src="static/UI.jpeg">
+<img src="static/HindBot.mp4">
 
 ## Chatbot Overview
 
