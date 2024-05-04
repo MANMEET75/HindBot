@@ -64,7 +64,7 @@ from langchain_google_genai import GoogleGenerativeAI
 
 
 
-os.environ['GOOGLE_API_KEY'] =  'AIzaSyCjyyhW36eS4Tkk6N2gITsBDOR6Q9kJeRI'
+os.environ['GOOGLE_API_KEY'] =  ''
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
@@ -86,7 +86,7 @@ db = Qdrant(client=client, embeddings=embeddings, collection_name="vector_db")
 retriever = db.as_retriever(search_kwargs={"k":3})
 
 
-llm = GoogleGenerativeAI(model="models/text-bison-001", google_api_key="AIzaSyCY-PL2d9WL8qTsNY6jLFT_8EBfl2ezXk4", temperature=0.1)
+llm = GoogleGenerativeAI(model="models/text-bison-001", google_api_key="", temperature=0.1)
 
 
 
@@ -169,4 +169,4 @@ async def get_response(query: str = Form(...),phoneNumber: str = Form(...),times
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, port=3000,debug=True)
+    uvicorn.run(app, port=8000,debug=True)

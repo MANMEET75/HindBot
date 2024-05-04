@@ -102,13 +102,14 @@ body {
 .heading{
   color: #000;
   font-weight: 800;
-  font-size: 45px;
+  font-size: 55px;
   text-align: center;
   width: 100%;
   /* display: inline; */
   position: relative;
   left: 15px;
   bottom: 5px;
+  letter-spacing: 2px;
 
   
 }

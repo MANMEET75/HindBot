@@ -16,7 +16,7 @@ from langchain.embeddings import GooglePalmEmbeddings
 from langchain.llms import GooglePalm
 from langchain_google_genai import GoogleGenerativeAI
 
-os.environ['GOOGLE_API_KEY'] =  'AIzaSyCjyyhW36eS4Tkk6N2gITsBDOR6Q9kJeRI'
+os.environ['GOOGLE_API_KEY'] =  ''
 
 embeddings = GooglePalmEmbeddings()
 
