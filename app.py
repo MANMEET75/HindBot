@@ -64,7 +64,7 @@ from langchain_google_genai import GoogleGenerativeAI
 
 
 
-os.environ['GOOGLE_API_KEY'] =  ''
+os.environ['GOOGLE_API_KEY'] =  'AIzaSyCjyyhW36eS4Tkk6N2gITsBDOR6Q9kJeRI'
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
@@ -86,7 +86,7 @@ db = Qdrant(client=client, embeddings=embeddings, collection_name="vector_db")
 retriever = db.as_retriever(search_kwargs={"k":3})
 
 
-llm = GoogleGenerativeAI(model="models/text-bison-001", google_api_key="", temperature=0.1)
+llm = GoogleGenerativeAI(model="models/text-bison-001", google_api_key="AIzaSyCjyyhW36eS4Tkk6N2gITsBDOR6Q9kJeRI", temperature=0.1)
 
 
 
