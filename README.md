@@ -34,7 +34,7 @@ This chatbot, named HindBot, utilizes Google Palm for its framework and incorpor
 - Automated CI/CD pipelines using GitHub Actions
 - Scalable and secure deployment on AWS Cloud infrastructure
 
-## SInstructions for Execution
+## Instructions for Execution
 ### 1. Cloning the Repository
 ```bash
 
